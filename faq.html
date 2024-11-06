@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Ruang Rasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education-articles.html">Education Articles</a></li>
+                <li><a href="access-resources.html">Access Resources</a></li>
+                <li><a href="emotional-support.html">Emotional Support</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+            </ul>
+            <div class="login-container">
+                <a href="login.html">Log In</a>
+                <div class="user-icon">👤</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="search-bar">
+                <input type="text" id="faqSearch" placeholder="Search FAQ" onkeyup="searchFAQ()">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleAnswer(this)">Bagaimana saya bisa tahu kalau saya mengalami gangguan kecemasan atau stres biasa?</button>
+                    <div class="faq-answer">
+                        <p>Kecemasan normal muncul pada situasi tertentu dan hilang setelahnya, sedangkan gangguan kecemasan memicu rasa takut atau cemas yang terus-menerus tanpa alasan jelas...</p>
+                    </div>
+                </div>
+                <!-- Tambahkan pertanyaan lain dengan format yang sama -->
+            </div>
+
+            <!-- Form untuk pengguna memposting pertanyaan -->
+            <div class="post-question">
+                <h2>Post Your Question</h2>
+                <textarea id="userQuestion" placeholder="Ask your question here..."></textarea>
+                <button onclick="postQuestion()">Post Question</button>
+            </div>
+
+            <!-- Daftar pertanyaan dan balasan -->
+            <div id="question-section"> </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+    <footer>
+        <div class="footer"> © 2024 Ruang Rasa. All rights reserved.</div>
+    </footer>
+</html>

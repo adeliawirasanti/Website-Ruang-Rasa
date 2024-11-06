@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruang Rasa - Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education-articles.html">Education Articles</a></li>
+          <li><a href="access-resources.html">Access Resources</a></li>
+          <li><a href="emotional-support.html">Emotional Support</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="login-container">
+          <a href="login.html" class="active">Log In</a>
+          <div class="user-icon">👤</div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Left Content: Join Us and Logo Section -->
+      <section class="left-content">
+        <h1 class="join-text">JOIN US!</h1>
+        <div class="brand-name">RUANG RASA</div>
+      </section>
+
+      <!-- Right Content: Login and Signup Form Section -->
+      <section class="login-section">
+        <div class="form-container">
+          <!-- Title at the top -->
+          <h2 id="formTitle">LOG IN</h2>
+
+          <!-- Toggle buttons for switching between login and signup -->
+          <div class="form-header">
+            <button
+              id="loginBtn"
+              class="tab-button active"
+              onclick="toggleForm('login')"
+            >
+              LOG IN
+            </button>
+            <button
+              id="signupBtn"
+              class="tab-button"
+              onclick="toggleForm('signup')"
+            >
+              SIGN UP
+            </button>
+          </div>
+
+          <!-- Form Content -->
+          <div class="form-content">
+            <!-- Login Form -->
+            <form id="loginForm" onsubmit="return validateLogin()">
+              <input
+                type="email"
+                id="loginEmail"
+                placeholder="Enter Email"
+                required
+              />
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter Password"
+                required
+              />
+              <div id="forgotPassword" class="link">
+                <a href="#">Forgot Password?</a>
+              </div>
+              <input type="submit" value="LOG IN" />
+            </form>
+
+            <!-- Signup Form -->
+            <form
+              id="signupForm"
+              class="hidden"
+              onsubmit="return validateSignup()"
+            >
+              <input
+                type="text"
+                id="signupName"
+                placeholder="Enter Name"
+                required
+              />
+              <input
+                type="email"
+                id="signupEmail"
+                placeholder="Enter Email"
+                required
+              />
+              <input
+                type="password"
+                id="signupPassword"
+                placeholder="Enter Password"
+                required
+              />
+              <input
+                type="password"
+                id="signupConfirmPassword"
+                placeholder="Confirm Password"
+                required
+              />
+              <input type="submit" value="SIGN UP" />
+            </form>
+          </div>
+
+          <!-- CTA for Signup (only visible in login form) -->
+          <div class="cta" id="ctaLogin">
+            <p>
+              Not a member?
+              <a href="#" onclick="toggleForm('signup')">Sign up now</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

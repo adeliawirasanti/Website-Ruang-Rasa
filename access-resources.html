@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Resources</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education-articles.html">Education Articles</a></li>
+                <li><a href="access-resources.html" class="active">Access Resources</a></li>
+                <li><a href="emotional-support.html">Emotional Support</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="login-container">
+                <a href="login.html">Log In</a>
+                <div class="user-icon">👤</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <h1>ACCESS TO RESOURCES</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search Recommendation" id="searchInput">
+                <button onclick="searchFunction()"><span>🔍</span></button>
+                <button onclick="imageSearchFunction()"><span>📷</span></button>
+            </div>
+            <h2>TOP SEARCH</h2>
+            <div class="resource-categories">
+                <a href="https://youtube.com/playlist?list=PLxaKdysyEqf7BjWdTLXyPvCD8qWcelbQa&si=75EiiV3TT7GLozgK" target="_blank">
+                    <div class="category-item">
+                        <span>📖</span>
+                        <p>Book</p>
+                    </div>
+                </a>
+                <a href="https://youtube.com/playlist?list=PLxaKdysyEqf4K4KGkB3z8p7AGhbAP7nw-&si=-Bivcgmw8dlIajLr" target="_blank">
+                    <div class="category-item">
+                        <span>🎬</span>
+                        <p>Movie</p>
+                    </div>
+                </a>
+                <a href="https://open.spotify.com/show/6W6yEU2jdbwzxRXKg2A4ne?si=GrELdRpXSmW3wWtgT66Vdw" target="_blank">
+                    <div class="category-item">
+                        <span>🎙️</span>
+                        <p>Podcast</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 

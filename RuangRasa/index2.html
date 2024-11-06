@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Rasa - Mental Health Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Ruang Rasa</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#task-manager">Task Manager</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Ruang Rasa</h2>
+            <p>Your space for mental health awareness and self-care. Explore, manage, and take care of your well-being.</p>
+            <a href="#task-manager" class="btn">Start Managing Tasks</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Ruang Rasa is dedicated to providing resources and support for mental health awareness. We aim to help individuals manage their mental health through various tools and information.</p>
+    </section>
+
+    <section id="resources" class="resources-section">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="#">Articles on Mental Health</a></li>
+            <li><a href="#">Self-Care Tips</a></li>
+            <li><a href="#">Hotlines and Support Groups</a></li>
+        </ul>
+    </section>
+
+    <section id="task-manager" class="task-manager-section">
+        <h2>Task Manager</h2>
+        <div class="add-task">
+            <input type="text" id="task-input" placeholder="What do you need to do?">
+            <input type="date" id="date-input">
+            <input type="time" id="time-input">
+            <select id="priority-input">
+                <option value="normal">Normal</option>
+                <option value="urgent">Urgent</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="filter">
+            <button id="filter-all">All</button>
+            <button id="filter-done">Done</button>
+            <button id="filter-not-done">Not Done</button>
+        </div>
+
+        <ul id="task-list"></ul>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@ruangrasa.com</p>
+        <p>&copy; 2024 Ruang Rasa. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

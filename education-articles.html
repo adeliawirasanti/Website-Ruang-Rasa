@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Rasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education-articles.html" class="active">Education Articles</a></li>
+                <li><a href="access-resources.html">Access Resources</a></li>
+                <li><a href="emotional-support.html">Emotional Support</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="login-container">
+                <a href="login.html">Log In</a>
+                <div class="user-icon">👤</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articles-section">
+            <h1>EDUCATIONAL ARTICLES</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search Articles" oninput="filterArticles()">
+                <button><span>🔍</span></button>
+                <button><span>📷</span></button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+            <h2>TRENDING TOPIC</h2>
+            <!-- Articles -->
+            <div class="trending-container">
+                <!-- First Article -->
+                <div class="card">
+                    <div class="category-tag">Topic 1</div>
+                    <img src="Artikel 1.jpeg" alt="Image 1">
+                    <h3>Pentingnya Kesehatan Mental dan Dukungan Profesional</h3>
+                    <p>22/10/2023</p>
+                    <p>Kesehatan mental adalah aspek penting yang sering diabaikan. Beban hidup yang meningkat dapat membuat seseorang merasa kewalahan, sehingga penting untuk mengetahui kapan harus mencari bantuan.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </div>
+        
+                <!-- Second Article -->
+                <div class="card">
+                    <div class="category-tag">Topic 2</div>
+                    <img src="Artikel 2.jpeg" alt="Image 2">
+                    <h3>Mengapa Berbicara dengan Psikolog Bukanlah Tanda Kelemahan</h3>
+                    <p>11/09/2024</p>
+                    <p>Stigma tentang kesehatan mental membuat banyak orang ragu mencari bantuan. Padahal, berbicara dengan psikolog adalah langkah berani untuk memperbaiki kesejahteraan emosional.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </div>
+        
+                <!-- Third Article -->
+                <div class="card">
+                    <div class="category-tag">Topic 3</div>
+                    <img src="Artikel 3.jpeg" alt="Image 3">
+                    <h3>Melepaskan Beban Emosi: Manfaat Konseling Bagi Kesehatan Mental</h3>
+                    <p>13/05/2024</p>
+                    <p>Konseling membantu melepaskan beban emosi dan memberikan kejelasan dalam menghadapi tantangan. Ini adalah cara aman untuk berbicara dan memahami perasaan tanpa takut dihakimi.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

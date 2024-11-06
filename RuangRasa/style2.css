@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6; /* Abu muda */
+    color: #333;
+}
+
+header {
+    background: #6a5acd; /* Ungu tua */
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: #d3d3e3; /* Abu muda */
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #6a5acd; /* Ungu tua */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-section, .resources-section, .task-manager-section, footer {
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-task input, .add-task select, .add-task button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.add-task button {
+    background-color: #6a5acd; /* Ungu tua */
+    color: white;
+    cursor: pointer;
+}
+
+.add-task button:hover {
+    background-color: #5a4cb1; /* Warna ungu tua yang lebih gelap */
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0; /* Abu muda */
+}
+
+li.done {
+    text-decoration: line-through;
+    background-color: #e8e8e8; /* Abu muda lebih gelap untuk tugas selesai */
+}
+
+li button {
+    background-color: #dc3545; /* Merah untuk tombol hapus */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+li button:hover {
+    background-color: #c82333; /* Warna merah yang lebih gelap saat hover */
+}
+
+.filter {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter button {
+    padding: 10px 20px;
+    background-color: #6a5acd; /* Ungu tua */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter button:hover {
+    background-color: #5a4cb1; /* Warna ungu tua yang lebih gelap */
+}
+
+footer {
+    text-align: center;
+    background: #6a5acd; /* Ungu tua */
+    color: white;
+    padding: 20px;
+    position: relative;
+}
